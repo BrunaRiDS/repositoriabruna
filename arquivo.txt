@@ -1,0 +1,52 @@
+programa
+{
+  funcao inicio()
+  {
+    real  valortotal=0.0
+   
+    inteiro casos
+         escreva("lanchonete da Bruna\n\n")
+    faca    {
+   
+      escreva("Cardapio\n\n")
+     
+      escreva("  1 -> X-Salada R$15 \n")
+      escreva("  2 -> X-Bacon R$18 \n")
+      escreva("  3 -> X-Egg R$12 \n")
+      escreva("  4 -> Refrigerante R$5 \n")
+      escreva("  5 -> Finalizar pedido\n")
+     
+      escreva("Digite o número do seu pedido: ")
+     
+      leia(casos)
+      escolha (casos)
+      {
+          caso 1:
+          valortotal = valortotal + 15.0 
+        pare
+       
+        caso 2:
+        valortotal = valortotal + 18.0  
+        pare
+       
+        caso 3:
+          valortotal = valortotal + 12.0  
+        pare
+
+
+        caso 4:
+          valortotal = valortotal + 5.0  
+        pare
+
+        caso 5:
+          escreva("Pedido Finalizado! o valor total do seu pedido e : ", valortotal, "\n")
+        pare
+       
+        caso contrario:
+          escreva("Foi digitado um item incorreto \n\n")
+      }      
+    } enquanto(casos != 5)
+    }
+  }
+}
+
